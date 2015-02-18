@@ -7,7 +7,7 @@ arm_controller:
      shoulder_to_upper_arm: {p: 10000, i: 500.0, d: 100.0, i_clamp: 100.0}
      upper_arm_to_elbow_bracket: {p: 10000, i: 500.0, d: 100.0, i_clamp: 100.0}
      elbow_bracket_to_elbow_block: {p: 10000.0, i: 0.0, d: 0.0, i_clamp: 0.0}
-     elbow_blow_to_lower_arm: {p: 10000.0, i: 0.0, d: 0.0, i_clamp: 0.0}
+     elbow_blow_to_lower_arm: {p: 1000.0, i: 500.0, d: 0.0, i_clamp: 0.0}
   constraints:
       goal_time: 0.6
       stopped_velocity_tolerance: 0.5
