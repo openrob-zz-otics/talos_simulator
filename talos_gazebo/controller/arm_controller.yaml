@@ -6,7 +6,7 @@ arm_controller:
       - shoulder_to_upper_arm
       - upper_arm_to_elbow_bracket
       - elbow_bracket_to_elbow_block
-      - elbow_blow_to_lower_arm
+      - elbow_to_lower_arm
   gains:
      body_to_shoulder: {p: 10000, i: 500.0, d: 100.0, i_clamp: 100.0}
      shoulder_to_upper_arm: {p: 10000, i: 500.0, d: 100.0, i_clamp: 100.0}
