@@ -26,7 +26,7 @@
   <node name="torso_controller_spawner" pkg="controller_manager" type="spawner" args="torso_controller"/>
 
   <!-- launch base controllers -->
-  <rosparam file="$(find talos_gazebo)/controller/base_controller.yaml" command="load"/>
+  <!-- <rosparam file="$(find talos_gazebo)/controller/base_controller.yaml" command="load"/> -->
 
 </launch> 
 

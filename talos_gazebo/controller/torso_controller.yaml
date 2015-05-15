@@ -4,8 +4,8 @@ torso_controller:
     - base_to_torso
   gains:
     base_to_torso:
-      p: 10000000.0
-      d: 1000000.0
-      i: 0.0
+      p: 6.0
+      d: 4.0
+      i: 4.0
       i_clamp: 0.0
 
