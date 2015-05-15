@@ -1,5 +1,5 @@
 torso_controller:
-  type: joint_trajectory_controller/JointTrajectoryController
+  type: effort_controllers/JointTrajectoryController
   joints:
     - base_to_torso
   gains:
