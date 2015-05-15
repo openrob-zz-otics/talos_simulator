@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>talos_simulator</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <description>The talos_simulator package</description>
 
   <maintainer email="noobaca2@gmail.com">Devon Ash</maintainer>
