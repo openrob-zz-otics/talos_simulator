@@ -8,7 +8,7 @@
   </include>
 
   <!-- send robot to urdf to param serv -->
-  <include file="$(find talos_description)/launch/talos_upload.launch">
+  <include file="$(find talos_description)/launch/talos_upload_gazebo.launch">
   </include>
 
   <!-- spawn in gazebo -->
