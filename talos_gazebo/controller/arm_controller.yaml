@@ -9,10 +9,10 @@ arm_controller:
       - arm_elbow_block_to_arm_lower_arm
       - arm_lower_arm_to_arm_wrist
   gains:
-     torso_to_arm_shoulder: {p: 6, i: 4, d: 4, i_clamp: 0}
-     arm_shoulder_to_arm_upper_arm: {p: 6, i: 4, d: 4, i_clamp: 0}
-     arm_upper_arm_to_arm_elbow_bracket: {p: 6, i: 4, d: 4, i_clamp: 0}
-     arm_elbow_bracket_to_arm_elbow_block: {p: 6, i: 4, d: 4, i_clamp: 0}
+     torso_to_arm_shoulder: {p: 6, i: 4, d: 4, i_clamp: 0.0}
+     arm_shoulder_to_arm_upper_arm: {p: 6, i: 4, d: 4, i_clamp: 0.0 }
+     arm_upper_arm_to_arm_elbow_bracket: {p: 6, i: 4, d: 4, i_clamp: 0.0}
+     arm_elbow_bracket_to_arm_elbow_block: {p: 6, i: 4, d: 4, i_clamp: 0.0}
      arm_elbow_block_to_arm_lower_arm: {p: 6, i: 4, d: 4, i_clamp: 0.0}
      arm_lower_arm_to_arm_wrist: {p: 6, i: 4, d: 4, i_clamp: 0.0}
   constraints:
@@ -27,4 +27,3 @@ arm_controller:
   stop_trajectory_duration: 0.5
   state_publish_rate:  25
   action_monitor_rate: 10
-
