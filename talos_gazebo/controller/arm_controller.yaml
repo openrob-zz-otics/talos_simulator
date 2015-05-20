@@ -1,5 +1,5 @@
 arm_controller:
-  type: position_controllers/JointTrajectoryController
+  type: effort_controllers/JointTrajectoryController
   topic: "test"
   joints: 
       - torso_to_arm_shoulder
