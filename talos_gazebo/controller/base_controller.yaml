@@ -25,3 +25,7 @@ base_controller:
       max_velocity           : 4.0   # rad/s
       has_acceleration_limits: true
       max_acceleration       : 25.0   # rad/s^2
+
+gazebo_ros_control/pid_gains:
+      bl_wheel_joint: {p: 6, i: 4, d: 4, i_clamp: 0.0}
+      br_wheel_joint: {p: 6, i: 4, d: 4, i_clamp: 0.0}
