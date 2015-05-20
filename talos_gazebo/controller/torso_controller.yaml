@@ -3,9 +3,5 @@ torso_controller:
   joints:
     - base_to_torso
   gains:
-    base_to_torso:
-      p: 6.0
-      d: 4.0
-      i: 4.0
-      i_clamp: 0.0
+    base_to_torso: {p: 6.0, d: 4.0, i: 4.0, i_clamp: 0.0}
 
