@@ -2,5 +2,4 @@ gripper_controller:
     type: effort_controllers/JointTrajectoryController
     joints:
         - arm_wrist_to_gripper_base
-        - gripper_base_to_stationary_claw
         - gripper_stationary_claw_to_gripper_movable_claw
