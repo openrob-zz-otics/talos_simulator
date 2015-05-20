@@ -3,3 +3,6 @@ gripper_controller:
     joints:
         - arm_wrist_to_gripper_base
         - gripper_stationary_claw_to_gripper_movable_claw
+    gains:
+     arm_wrist_to_gripper_base: {p: 6, i: 4, d: 4, i_clamp: 0.0}
+     gripper_stationary_claw_to_gripper_movable_claw: {p: 6, i: 4, d: 4, i_clamp: 0.0}
