@@ -2,3 +2,5 @@ torso_controller:
   type: effort_controllers/JointTrajectoryController
   joints:
     - base_to_torso
+  gains:
+     torso_to_arm_shoulder: {p: 6, i: 4, d: 4, i_clamp: 0.0}
