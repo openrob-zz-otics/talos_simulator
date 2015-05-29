@@ -1,0 +1,18 @@
+head_controller:
+  type: effort_controllers/JointTrajectoryController
+  topic: "test"
+  joints: 
+      - talos_head_joint
+      - talos_neck_joint
+  gains:
+     talos_head_joint: {p: 6, i: 4, d: 4, i_clamp: 0.0}
+     talos_neck_joint: {p: 6, i: 4, d: 4, i_clamp: 0.0 }
+  constraints:
+      goal_time: 0.6
+      stopped_velocity_tolerance: 0.5
+      torso_to_arm_shoulder: {trajectory: 0.1, goal: 0.1}
+      talos_head_joint: {trajectory: 0.1, goal: 0.1}
+      talos_neck_joint: {trajectory: 0.1, goal: 0.1}
+  stop_trajectory_duration: 0.5
+  state_publish_rate:  25
+  action_monitor_rate: 10
