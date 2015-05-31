@@ -4,7 +4,7 @@
   <!-- startup simulated world --> 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" default="worlds/empty.world"/>
-    <arg name="paused" value="false"/>
+    <arg name="paused" value="true"/>
   </include>
 
   <!-- send robot to urdf to param serv -->
