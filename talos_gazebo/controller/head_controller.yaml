@@ -1,12 +1,9 @@
 head_controller:
-  type: effort_controllers/JointTrajectoryController
+  type: position_controllers/JointTrajectoryController
   topic: "test"
   joints: 
       - talos_head_joint
       - talos_neck_joint
-  gains:
-     talos_head_joint: {p: 6, i: 4, d: 4, i_clamp: 0.0}
-     talos_neck_joint: {p: 6, i: 4, d: 4, i_clamp: 0.0 }
   constraints:
       goal_time: 0.6
       stopped_velocity_tolerance: 0.5
@@ -16,3 +13,8 @@ head_controller:
   stop_trajectory_duration: 0.5
   state_publish_rate:  25
   action_monitor_rate: 10
+
+
+gazebo_ros_control/pid_gains:
+  talos_head_joint: {p: 1.0, i: 0.0, d: 1.0}
+  talos_neck_joint: {p: 1.0, i: 0.0, d: 1.0}
