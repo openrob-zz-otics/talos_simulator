@@ -9,12 +9,12 @@ arm_controller:
       - arm_elbow_block_to_arm_lower_arm
       - arm_lower_arm_to_arm_wrist
   gains:
-     torso_to_arm_shoulder: {p: 6, i: 4, d: 4, i_clamp: 0.0}
+     torso_to_arm_shoulder: {p: 0.02, i: 0.004, d: 0.004, i_clamp: 99.0}
      arm_shoulder_to_arm_upper_arm: {p: 6, i: 4, d: 4, i_clamp: 0.0 }
-     arm_upper_arm_to_arm_elbow_bracket: {p: 6, i: 4, d: 4, i_clamp: 0.0}
+     arm_upper_arm_to_arm_elbow_bracket: {p: 0.002, i: 0.004, d: 0.004, i_clamp: 0.0}
      arm_elbow_bracket_to_arm_elbow_block: {p: 6, i: 4, d: 4, i_clamp: 0.0}
      arm_elbow_block_to_arm_lower_arm: {p: 6, i: 4, d: 4, i_clamp: 0.0}
-     arm_lower_arm_to_arm_wrist: {p: 6, i: 4, d: 4, i_clamp: 0.0}
+     arm_lower_arm_to_arm_wrist: {p: 0.02, i: 0.04, d: 0.04, i_clamp: 0.0}
   constraints:
       goal_time: 0.6
       stopped_velocity_tolerance: 0.5

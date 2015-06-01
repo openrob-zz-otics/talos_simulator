@@ -27,5 +27,5 @@ base_controller:
       max_acceleration       : 25.0   # rad/s^2
 
 gazebo_ros_control/pid_gains:
-  br_back_wheel_joint: {p: 1.0, i: 0.0, d: 1.0}
-  bl_back_wheel_joint: {p: 1.0, i: 0.0, d: 1.0}
+  br_back_wheel_joint: {p: 0, i: 0.0, d: 0}
+  bl_back_wheel_joint: {p: 0, i: 0.0, d: 0}
