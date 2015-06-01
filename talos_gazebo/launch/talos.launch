@@ -4,7 +4,7 @@
   <!-- startup simulated world --> 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" default="worlds/empty.world"/>
-    <arg name="paused" value="true"/>
+    <arg name="paused" value="false"/>
   </include>
 
   <!-- send robot to urdf to param serv -->
@@ -34,8 +34,8 @@
   <node name="gripper_controller_spawner" pkg="controller_manager" type="spawner" args="gripper_controller"/>
 
   <!-- launch head controllers -->
-  <rosparam file="$(find talos_gazebo)/controller/head_controller.yaml" command="load"/>
-  <node name="head_controller_spawner" pkg="controller_manager" type="spawner" args="head_controller"/>
+  <!-- <rosparam file="$(find talos_gazebo)/controller/head_controller.yaml" command="load"/>
+  <node name="head_controller_spawner" pkg="controller_manager" type="spawner" args="head_controller"/> -->
 
 </launch> 
 
