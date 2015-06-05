@@ -7,7 +7,7 @@ caster_controller:
       - fl_caster_to_wheel
       - fr_caster_to_wheel
   gains:
-     fr_base_link_to_caster {p: 0.02, i: 0.004, d: 0.004, i_clamp: 99.0}
+     fr_base_link_to_caster: {p: 0.02, i: 0.004, d: 0.004, i_clamp: 99.0}
      fl_base_link_to_caster: {p: 6, i: 4, d: 4, i_clamp: 0.0 }
      fr_caster_to_wheel: {p: 6, i: 4, d: 4, i_clamp: 0.0}
      fl_caster_to_wheel: {p: 0.02, i: 0.04, d: 0.04, i_clamp: 0.0}
