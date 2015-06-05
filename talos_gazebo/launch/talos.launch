@@ -37,5 +37,9 @@
   <!-- <rosparam file="$(find talos_gazebo)/controller/head_controller.yaml" command="load"/>
   <node name="head_controller_spawner" pkg="controller_manager" type="spawner" args="head_controller"/> -->
 
+  <!-- launch caster controllers -->
+  <rosparam file="$(find talos_gazebo)/controller/caster_controller.yaml" command="load"/>
+  <node name="caster_controller_spawner" pkg="controller_manager" type="spawner" args="caster_controller"/>
+
 </launch> 
 
